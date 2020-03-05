@@ -1,0 +1,160 @@
+/* import google fonts*/
+@import url("https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap");
+
+/* Global styling */
+html,
+body {
+  margin: 0%;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+/* constants */
+:root {
+  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  --priamry-color: #ff8603;
+  --secondary-color: #2f322d;
+  --font-color: #323630;
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+/* Global variables */
+.font-12 {
+  font-size: 12px;
+}
+.font-15 {
+  font-size: 15px;
+}
+.font-17 {
+  font-size: 17px;
+}
+.font-19 {
+  font-size: 19px;
+}
+.font-21 {
+  font-size: 21px;
+}
+.font-23 {
+  font-size: 232px;
+}
+
+/* Header part start here */
+header .top-banner .row {
+  position: relative;
+  background: url(../images/banner-1.png);
+  display: flex;
+  width: 100%;
+  /* height: 11vh; */
+  margin: 0;
+  padding: 0;
+}
+
+header .top-banner button {
+  float: right;
+  margin-top: 3vh;
+  margin-right: 12rem;
+  color: whitesmoke;
+  background-color: red;
+  border: none;
+  padding: 0.3rem 1rem;
+  font: bold 700;
+  border-radius: 10%;
+}
+
+header .contact-banner {
+  padding: 0rem 6rem;
+  padding-bottom: 0;
+  background-color: var(--secondary-color);
+  color: whitesmoke;
+  font-size: small;
+}
+
+header .contact-banner .left-side p,
+header .contact-banner .right-side p {
+  margin-bottom: 0;
+}
+header .contact-banner .left-side p a,
+header .contact-banner .right-side p a {
+  color: white !important;
+}
+
+header .contact-banner .right-side p a + a,
+header .contact-banner .left-side p a + a {
+  margin: 0 0.7rem;
+}
+
+header .contact-banner .right-side p a:hover,
+header .contact-banner .left-side p a:hover {
+  color: var(--priamry-color) !important;
+  text-decoration: none;
+}
+
+/* Navbar starts here */
+header .nav-bar {
+  box-shadow: 0px 0px 2px 0px var(--secondary-color);
+}
+header .nav-bar ul li + li {
+  margin: 0 0.8rem;
+}
+
+header .nav-bar ul li .search-nav {
+  margin-right: 14rem;
+  align-self: start;
+}
+
+header .nav-bar ul li form input {
+  border-radius: 40px 0px 0px 40px;
+  margin-right: 0;
+  width: 20rem;
+  padding: 0 1rem;
+  height: 2rem;
+}
+
+header .nav-bar ul li form input:focus {
+  background-color: var(--font-color);
+  color: white;
+}
+
+header .nav-bar ul li form input {
+  padding: 0rem 1rem;
+}
+header .nav-bar ul li form button {
+  background-color: var(--priamry-color);
+  color: white;
+  height: 2rem;
+  margin-left: 0;
+  border-radius: 0px 80px 80px 0px;
+  border-color: var(--priamry-color);
+}
+
+header .nav-bar ul .item-2 {
+  color: var(--priamry-color);
+  font-size: 15px;
+  display: block;
+}
+
+header .nav-bar ul .item-2 > span {
+  display: block;
+}
+
+/* Categories start here */
+header .category-nav a {
+  color: var(--font-color);
+}
+
+header .category-nav a:hover {
+  background-color: var(--priamry-color);
+  color: white;
+}
+/* Header part ends here */
