@@ -14,6 +14,10 @@ body {
   box-sizing: border-box;
 }
 
+main {
+  background-color: whitesmoke;
+}
+
 input:focus,
 select:focus {
   outline: none;
@@ -21,7 +25,7 @@ select:focus {
 
 /* constants */
 :root {
-  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  --box-shadow: 0px 5px 10px rgba(57, 56, 61, 0.205);
   --priamry-color: #ff8603;
   --secondary-color: #2f322d;
   --font-color: #323630;
@@ -46,7 +50,7 @@ select:focus {
   font-size: 21px;
 }
 .font-23 {
-  font-size: 232px;
+  font-size: 23px;
 }
 
 /* Header part start here */
@@ -163,6 +167,8 @@ header .category-nav a:hover {
 /* Site-baners starts here*/
 main .site-banner .container-fluid {
   background: #24a4d8;
+  box-shadow: var(--box-shadow);
+  margin-right: 0;
 }
 
 main .site-banner .container-fluid .product-categories {
@@ -201,12 +207,11 @@ main .site-banner .banner-slider {
 
 .site-slider .slider-btn .prev,
 .site-slider .slider-btn .next {
-  background-color: white;
-  padding: 1rem 1.5rem;
-  border-radius: 10rem;
-  color: white;
+  background-color: whitesmoke;
+  padding: 1rem 0.8rem;
+  /* border-radius: 10rem; */
+  color: var(--font-color);
   margin: 0 1rem;
-  opacity: 0;
   transition: opacity 1s ease;
 }
 .right-0 {
@@ -236,12 +241,60 @@ main .site-banner .banner-slider {
   border: none;
   background-color: white;
   text-indent: -99999px;
-  border-radius: 100%;
+  border-radius: 0;
 }
 
 .slick-dots li .slick-active button {
   transform: scale(2.5);
   box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  background-color: var(--priamry-color);
+  color: var(--priamry-color);
 }
 /* Site banner ends here */
+
+/* Site landing-info */
+main .landing-info {
+  /* background-color: red; */
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+main .landing-info .info-1 {
+  padding: 1rem 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--box-shadow);
+  color: var(--priamry-color);
+  background-color: white;
+}
+
+main .landing-info .info-1 span {
+  color: var(--font-color) !important;
+  float: right;
+}
+/* /Site landing-info */
+/* Selected products starts here */
+main .selected-products {
+  margin: 1px 4rem;
+  font-family: var(--font-roboto);
+}
+
+main .selected-products ul li a {
+  color: var(--font-color) !important;
+}
+
+main .selected-products ul li a:hover,
+main .selected-products ul li a:active {
+  color: white !important;
+  background-color: var(--priamry-color);
+}
+main .selected-products .title hr {
+  /* background-color: var(--priamry-color); */
+  margin-top: 0;
+  border: 1.5px solid var(--priamry-color);
+}
+
+/* Selected products ends here */
 /* Main site ends here */
