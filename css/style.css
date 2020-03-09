@@ -69,7 +69,7 @@ header .top-banner button {
   border: none;
   padding: 0.3rem 1rem;
   font: bold 700;
-  border-radius: 10%;
+  border-radius: 40px;
 }
 
 header .contact-banner {
@@ -158,3 +158,90 @@ header .category-nav a:hover {
   color: white;
 }
 /* Header part ends here */
+
+/* Main site starts here */
+/* Site-baners starts here*/
+main .site-banner .container-fluid {
+  background: #24a4d8;
+}
+
+main .site-banner .container-fluid .product-categories {
+  background: whitesmoke;
+  height: 100%;
+  margin-left: 3rem;
+  padding: 0;
+  align-self: start;
+}
+
+main .site-banner .container-fluid ul li {
+  list-style-type: none;
+  border-bottom: solid 1px var(--priamry-color);
+  margin: 0rem 0 0.4rem 0;
+  height: 1.8rem;
+  padding: 0.5rem;
+  align-items: center;
+}
+main .site-banner .container-fluid ul li a {
+  color: var(--font-color) !important;
+}
+
+main .site-banner .container-fluid ul li a:hover {
+  color: var(--priamry-color) !important;
+  text-decoration: none;
+}
+/* Banner slick slick slider*/
+main .site-banner .banner-slider {
+  position: relative;
+}
+
+.position-top {
+  position: absolute;
+  top: 45%;
+}
+
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  color: white;
+  margin: 0 1rem;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.right-0 {
+  right: 0;
+}
+/* Slick dots */
+.slick-dots {
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+}
+
+.slick-dots li {
+  margin: 0 0.6rem;
+}
+
+.slick-dots button {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: none;
+  background-color: white;
+  text-indent: -99999px;
+  border-radius: 100%;
+}
+
+.slick-dots li .slick-active button {
+  transform: scale(2.5);
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.25);
+}
+/* Site banner ends here */
+/* Main site ends here */
